@@ -5,5 +5,17 @@ var me = {
 	'age': 29,
 	'hair color': 'brown'
 };
+me.name = 'Mandi Linville',
+me.age = 28,
+me['hair color']='brown'
+
 
 //2. Iterate over the object to console.log the propery or key names. 
+
+function getKeyValues(obj){
+	for(var key in obj){
+		console.log(obj[key])
+	}
+}
+
+getKeyValues(me)

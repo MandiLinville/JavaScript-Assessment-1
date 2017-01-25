@@ -58,6 +58,29 @@ var crayola1990 = [
 	'Antique Brass'
 ];
 
+function makeURL (arr){
+	var outputArr = []
+	for(var i = 0; i < arr.length; i++){
+		var color = arr[i];
+		var arrColor = color.split(' ').join('-').toLowerCase()
+		outputArr.push(arrColor)
+		}
+		return outputArr
+	}
+		console.log(makeURL(crayola1990))
+
+// or use the replace method
+
+function makeURL (arr){
+	var outputArr = []
+	for(var i = 0; i < arr.length; i++){
+		var color = arr[i];
+		var arrColor = color.replace(/ /g,'-').toLowerCase()
+		outputArr.push(arrColor)
+		}
+		return outputArr
+	}
+		console.log(makeURL(crayola1990))
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
 
 /***** HINTS *******

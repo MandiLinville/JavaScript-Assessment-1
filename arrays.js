@@ -36,6 +36,19 @@ var stefan = {
 	title: 'mentor'
 };
 
+contacts.push(jake, matt, chris, tony, andrew, stefan)
 
-//3. Woops after adding all of those people to the same contacts list you realized you need a list just the mentors. Create a new variable named mentors populate it using contacts array. 
 
+//3. Whoops after adding all of those people to the same contacts list you realized you need a list just the mentors. Create a new variable named mentors populate it using contacts array. 
+
+var mentors = []
+function getMentors(arr){
+	for (var i = 0; i < arr.length; i++) {
+		var contact = arr[i]
+		if(contact.title === 'mentor'){
+			mentors.push(contact)
+		}
+	}
+}
+getMentors(contacts)
+console.log(mentors)
