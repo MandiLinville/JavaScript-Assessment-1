@@ -6,16 +6,18 @@ var me = {
 	'hair color': 'brown'
 };
 me.name = 'Mandi Linville',
-me.age = 28,
-me['hair color']='brown'
+	me.age = 28,
+	me['hair color'] = 'brown'
 
 
 //2. Iterate over the object to console.log the propery or key names. 
 
-function getKeyValues(obj){
-	for(var key in obj){
-		console.log(obj[key])
+function getKeyValues(obj) {
+	for (var key in me) {
+		if(me.hasOwnProperty(key)){
+			var elem = me[key]
+			console.log(key + ': ' + elem)
+		}
 	}
-}
 
-getKeyValues(me)
+	getKeyValues();

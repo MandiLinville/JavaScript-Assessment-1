@@ -3,15 +3,16 @@ var num10 = 10;
 var string8 = '8';
 var one = 1;
 
-function sum(){
-    return num10+string8+one;
+function sum(a,b,c){
+    var total = Number(a) + parseInt(b) + Number(c)
+    return total;
 }
-sum()
+sum(num10, string8, one)
 //2. write a loop that will log only numbers divisible by 3 between 20 - 100
 
 function divBy3(num){
   var arr = 0
-    for (i=0; i < arr.length ; i++){
+    for (i=20; i < arr.length ; i++){
         if(num % 3 == 0 && num> 19 && num <101){
             return num;
         }
